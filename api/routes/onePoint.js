@@ -7,8 +7,8 @@ const { requireLogin } = require('../controllers/user')
 
 const router = express.Router()
 
-router.post('/post-onePoint',requireLogin, onePointController.postOnePoint)
+router.post('/post-onePoint',onePointController.postOnePoint)
 
-router.get('/get-onePoint', requireLogin, onePointController.getOnePoint)
+router.get('/get-onePoint', onePointController.getOnePoint)
 
 module.exports = router

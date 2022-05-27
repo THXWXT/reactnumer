@@ -6,8 +6,8 @@ const { requireLogin } = require('../controllers/user')
 
 const router = express.Router()
 
-router.post('/post-bisection', requireLogin, rootController.postBisection)
+router.post('/post-bisection',  rootController.postBisection)
 
-router.get('/get-bisection', requireLogin , rootController.getBisection)
+router.get('/get-bisection',  rootController.getBisection)
 
 module.exports = router
