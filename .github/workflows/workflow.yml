@@ -16,15 +16,15 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: npm install
-        working-directory: ./react-numer
+        working-directory: ./react-numer/src
         run : npm install
 
       - name: npm run build
-        working-directory: ./react-numer
+        working-directory: ./react-numer/src
         run : npm run build
 
       - name: npm test
-        working-directory: ./react-numer
+        working-directory: ./react-numer/src
         run : npm test
       
       - uses: jakejarvis/s3-sync-action@master
